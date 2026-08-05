@@ -5,7 +5,7 @@ function sendMessage() {
   const message = userInput.value.trim();
   if (!message) return;
 
-  // Add user message
+  
   const userMsg = document.createElement('div');
   userMsg.className = 'message user';
   userMsg.textContent = message;
@@ -13,7 +13,7 @@ function sendMessage() {
 
   chatBox.scrollTop = chatBox.scrollHeight;
 
-  // Bot reply
+ 
   setTimeout(() => {
     const botMsg = document.createElement('div');
     botMsg.className = 'message bot';
